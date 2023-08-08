@@ -1,0 +1,49 @@
+@layer components {
+  @screen sm {
+    h1,
+    .h1 {
+      font-size: 2.25rem;
+      line-height: 3rem;
+    }
+    h2,
+    h2 > p,
+    h2 p > a,
+    .h2,
+    .h2 > p,
+    .h2 p > a {
+      font-size: 2.125rem;
+      line-height: 2.875rem;
+    }
+
+    h3,
+    .h3,
+    .h3 p > a,
+    .h3 > p {
+      @apply leading-7 font-poppinssemibold text-xl;
+    }
+    .rxsection-y-space {
+      padding: 4.375rem 0rem;
+    }
+    .rxsection-y-halfspace {
+      padding: 2.1875rem 0rem;
+    }
+    .rxsection-b-space {
+      padding-bottom: 4.375rem;
+    }
+
+    .rxsection-t-space {
+      padding-top: 4.375rem;
+    }
+    .anniversry-data{
+      .h2,h2{
+          font-size: 2.375rem;
+          line-height:3.25rem;
+      }
+    }
+    .termsPolicyMain{
+      h2{
+        @apply leading-7 font-poppinssemibold text-xl;
+      }
+    }
+  }
+}

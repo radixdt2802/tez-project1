@@ -1,0 +1,1 @@
+self.onmessage = function(e) {    console.log(e.data); self.postMessage("Hello this is web worker data");  }

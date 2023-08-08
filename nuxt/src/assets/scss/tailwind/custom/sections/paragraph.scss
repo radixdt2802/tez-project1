@@ -1,0 +1,151 @@
+// Global CSS
+@layer utilities {
+  .para_lg_semib p,
+  .para_lg_semib {
+    @apply font-semibold;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  div.para_lg > p,
+  div.para_lg > h3,
+  h3.para_lg > p,
+  h3.para_lg > p > a,
+  .para_lg p,
+  .para_lg {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  .para_md_semib p,
+  .para_md_semib {
+    @apply text-base font-semibold;
+    line-height: 1.625rem;
+  }
+  .para_md p,
+  .para_md {
+    @apply text-base;
+    line-height: 1.625rem;
+  }
+  p {
+    @apply text-base font-poppins;
+    line-height: 1.625rem;
+    padding: 0.625rem 0rem;
+  }
+  div.para_sm>p,
+  .para_sm p,
+    .para_sm {
+    @apply mb-0 text-base;
+    line-height: 1.625rem;
+  }
+  @screen xsm {
+    p {
+      font-size: 1.0625rem;
+      line-height: 1.75rem;
+    }
+    div.para_sm>p,
+    .para_sm p,
+    .para_sm {
+      font-size: 1.0625rem;
+      @apply leading-7;
+    }
+  }
+
+  @screen sm {
+    .para_md p,
+    .para_md {
+      font-size: 1.1875rem;
+      line-height: 1.9375rem;
+    }
+    div.para_sm > p,
+    .para_sm p,
+    .para_sm{
+      @apply text-xl;
+      line-height: 2.125rem;
+    }
+  }
+  @screen md {
+    div.para_lg > p,
+    div.para_lg > h3,
+    h3.para_lg > p,
+    h3.para_lg > p > a,
+    .para_lg p,
+    .para_lg {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+    .para_md p,
+    .para_md,
+    .para_md_semib p,
+    .para_md_semib {
+      @apply text-xl leading-8;
+    }
+    p {
+      @apply text-lg;
+      line-height: 1.875rem;
+      padding: 0.625rem 0rem;
+    }
+  }
+  @screen lg {
+    div.para_lg > p,
+    div.para_lg > h3,
+    h3.para_lg > p,
+    h3.para_lg > p > a,
+    .para_lg p,
+    .para_lg {
+      font-size: 1.625rem;
+      line-height: 2.375rem;
+    }
+    p {
+      @apply text-lg font-poppins;
+      line-height: 1.875rem;
+    }
+  }
+  @screen xl {
+    .para_md p,
+    .para_md {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+    div.para_lg > p,
+    div.para_lg > h3,
+    h3.para_lg > p,
+    h3.para_lg > p > a,
+    .para_lg p,
+    .para_lg,
+    .para_lg_semib p,
+    .para_lg_semib {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+    p {
+      @apply text-lg font-poppins;
+      line-height: 1.875rem;
+    }
+  }
+  @screen xxl {
+    div.para_lg > p,
+    div.para_lg > h3,
+    h3.para_lg > p,
+    h3.para_lg > p > a,
+    .para_lg p,
+    .para_lg,
+    .para_lg_semib p,
+    .para_lg_semib {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+    }
+  }
+  .para_cta {
+    p {
+      font-size: 1.375rem;
+      line-height: 2rem;
+      @screen md {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+      }
+      @screen xl {
+        font-size: 2rem;
+        line-height: 2.75rem;
+      }
+    }
+  }
+}

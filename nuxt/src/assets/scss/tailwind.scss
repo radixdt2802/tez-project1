@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* SCSS */
+@import 'tailwind/scss/variable.scss';
+@import 'tailwind/scss/function.scss';
+@import 'tailwind/scss/mixins.scss';
+
+/* customization css */
+@import 'tailwind/customization/base.elements.scss';
+@import 'tailwind/customization/components.scss';
+
+/* Section */
+@import 'tailwind/custom/sections/paragraph.scss';
+@import 'tailwind/custom/sections/buttons.scss';
+@import 'tailwind/custom/sections/slider-slick.scss';
+
+/* Theme */
+@import 'tailwind/theme/dark.scss';

@@ -1,0 +1,20 @@
+@layer components {
+  @screen xxl {
+    .para_lg {
+      font-size: 1.625rem;
+      line-height: 2.375rem;
+    }
+    .h3_sm,
+    .h3_sm a,
+    .h3_sm > p > a {
+      font-size: 1.625rem;
+      line-height: 2.375rem;
+    }
+    .anniversry-data{
+      .h2,h2{
+          font-size: 4.375rem;
+          line-height: 5.375rem;
+      }
+    }
+  }
+}

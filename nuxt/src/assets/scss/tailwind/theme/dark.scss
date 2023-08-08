@@ -1,0 +1,9 @@
+@layer utilities {
+    .dark{
+      [class*="dark:"] {
+        *, em {
+          @apply text-white;
+        }
+      }
+    }        
+}

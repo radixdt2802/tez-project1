@@ -1,0 +1,308 @@
+@layer utilities {
+  a.btn,
+  span.btn,
+  input[type="submit"].btn,
+  button.btn, .btn_video {
+    @apply rounded-lg bg-rxa-primary font-semibold  text-xl leading-7 text-black dark:text-black border-2 border-rxa-primary transition-colors ease-in-out duration-300 no-underline inline-block;
+    padding: 0.625rem 0.5rem;
+    
+    @screen lg {
+      padding: 0.6875rem 0.9375rem;
+    }
+    @screen sxl {
+      padding: 0.625rem 2.3125rem;
+    }
+    &:hover {
+      @apply bg-transparent dark:hover:bg-themedark-0 text-black dark:text-themedark-75;
+    }
+    &.primary{
+      @apply dark:text-themelight-0 dark:hover:text-themelight-0;
+    }
+    &.btn_md {
+      @apply text-xl dark:text-black;
+      &.btn_white_secondary{
+        p{
+          a{
+           @apply text-themelight-0 dark:text-themelight-0;
+          }
+        }
+      }
+    }
+    &.btn_sm, &.btn_video_sm {
+      @apply text-lg font-semibold  py-0 px-4 leading-10;
+    }
+   
+    &.btn_header {
+      @apply text-lg font-semibold leading-5;
+      padding: 0.3125rem 0.5625rem;
+      @screen md {
+        @apply text-sm leading-5;
+        // padding: 0.1875rem 0.625rem;
+        padding : 0.625rem 0.5rem;
+      }
+      @screen smd{
+        @apply text-lg leading-5;
+        padding : 0.688rem 0.938rem;
+      }
+      @screen sxl {
+        @apply text-xl leading-5;
+        padding: 0.625rem 2.25rem;
+      }
+    }
+    &.btn_header_mobile {
+      @apply text-base leading-6 font-semibold md:px-3 md:py-2;
+      padding: 3px 10px;
+      
+      border-radius: 0.3125rem;
+    }
+    &.btn_white {
+      @apply  bg-black text-primary ;
+      &:hover {
+        @apply text-white dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0 border-white bg-transparent;
+      }
+    }
+    &.btn_white_secondary {
+      @apply  text-white border-white bg-transparent ;
+      &:hover {
+        @apply bg-white text-primary dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+      }
+    }
+  }
+  .btn {
+    p {
+      @apply py-0;
+      a {
+        @apply font-semibold rounded-md bg-rxa-primary py-2 px-6 text-black dark:text-themedark-75 border-2 border-rxa-primary transition-colors ease-in-out duration-300 no-underline inline-block;
+        &:hover {
+          @apply bg-transparent text-primary dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+        }
+      }
+    }
+    &.btn_md {
+      p {
+        a {
+          @apply text-xl px-5 dark:text-black;
+        }
+      }
+    }
+     &.rxa_btn_sm {
+       @apply inline-block;
+      p {
+        a {
+          @apply text-xl font-semibold py-0 px-4 leading-10 text-black bg-rxa-primary border-rxa-primary flex items-center;
+          &:hover {
+            @apply bg-white text-black border-rxa-primary;
+          }
+          &::after {
+            content: url("https://s3.ap-south-1.amazonaws.com/stage.radixweb.com/button_arrow_befaf3b20a.svg");
+            line-height: 1;
+            margin-left: 0.75rem;
+            margin-bottom: -0.125rem;
+          }
+        }
+      }
+      &.rxa_btn_xsm{
+        p {
+          a {
+            @apply text-lg xl:text-xl leading-10;
+          }
+        }
+      }
+      &.primary_bg{
+        p {
+          a {
+            @apply bg-primary border-primary;
+            &:hover {
+              @apply border-primary;
+            }
+          }
+        }
+      }
+     
+    }
+    &.btn_sm {
+      p {
+        a {
+          @apply text-lg font-semibold py-0 px-4 leading-10 text-black;
+          margin: 0.625rem auto;
+          
+        }
+      }
+    }
+    &.btn_trans {
+      p {
+        a {
+          @apply text-lg bg-transparent text-primary;
+          &:hover {
+            @apply bg-primary text-black dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+          }
+        }
+      }
+    }
+    &.btn_trans_sm {
+      p {
+        a {
+          @apply text-lg font-semibold bg-transparent text-black;
+          padding: 0rem 1.125rem;
+          &:hover {
+            @apply bg-rxa-primary text-black dark:hover:text-themedark-75 dark:border-rxa-primary dark:hover:bg-themedark-0;
+          }
+        }
+      }
+    }
+    &.btn_white {
+      p {
+        a {
+          @apply bg-transparent text-white border-white;
+          &:hover {
+            @apply bg-white text-primary dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+          }
+        }
+      }
+    }
+    &.btn_white_secondary {
+      p {
+        a {
+          @apply text-white border-white bg-transparent ;
+          &:hover {
+            @apply text-primary bg-white dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+          }
+        }
+      }
+    }
+    &.btn_secondary {
+      p {
+        a {
+          @apply bg-secondary text-black border-secondary;
+          &:hover {
+            @apply bg-white text-secondary border-secondary dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+          }
+        }
+      }
+    }
+    &.btn_secondaryinverse {
+      p {
+        a {
+          @apply text-secondary bg-transparent border-secondary dark:border-white dark:text-white;
+          &:hover {
+            @apply text-white bg-secondary border-secondary dark:bg-primary dark:border-primary dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+          }
+        }
+      }
+    }
+    &.btn_xsm {
+      p {
+        a {
+          @apply text-lg leading-6 rounded-lg;
+          padding: 0.375rem 1.125rem;
+          margin: 0.625rem auto;
+        }
+      }
+    }
+  }
+  @screen md {
+    .btn {
+      p {
+        a {
+          @apply text-2xl leading-8;
+        }
+      }
+      &.btn_sm {
+        p {
+          a {
+            @apply text-lg font-semibold  py-0 px-4 leading-10;
+
+            margin: 0.625rem auto;
+          }
+        }
+      }
+      &.btn_md{
+        &.btn_white_secondary, &.btn_white{
+          p{
+            a{
+              color: #ffffff !important;
+              &:hover{
+                color: #31bbae !important;
+              }
+            }
+          }
+        }
+      }
+      &.btn_md {
+        p {
+          a {
+            @apply px-5 leading-9;
+            font-size: 1.625rem;
+          }
+        }
+      }
+    }
+  }
+  @screen lg {
+    .btn {
+      p {
+        a {
+          font-size: 1.625rem;
+          line-height: 2.375rem;
+          // @apply px-10;
+        }
+      }
+      &.btn_sm {
+        p {
+          a {
+            @apply text-lg font-semibold  py-0 px-4 leading-10;
+            margin: 0.625rem auto;
+          }
+        }
+      }
+      &.btn_md {
+        p {
+          a {
+            @apply font-semibold px-8 py-2;
+          }
+        }
+      }
+    }
+  }
+  .btn_client {
+    p {
+      @apply py-0 font-semibold rounded-md bg-primary cursor-pointer px-6 text-black dark:text-themedark-75 border-2 border-primary transition-colors ease-in-out duration-300 no-underline inline-block;
+
+      &:hover {
+        @apply bg-transparent text-primary dark:hover:text-themedark-75 dark:border-primary dark:hover:bg-themedark-0;
+      }
+    }
+  }
+}
+
+button {
+  &:focus {
+    outline: inherit;
+  }
+  @screen lg {
+    .button-md {
+      @apply px-8 py-2 border-2 text-xl;
+    }
+    .button-xl {
+      @apply px-10 py-3 text-2xl font-semibold;
+    }
+  }
+}
+
+// arrow button
+.ctaOverall {
+  .cta-arrow {
+    p {
+      @apply inline;
+      a {
+        @apply text-primary no-underline;
+      }
+    }
+  }
+  &:hover {
+    img {
+      margin-left: 0.625rem;
+    }
+  }
+}
+// Client testimonail Button Style

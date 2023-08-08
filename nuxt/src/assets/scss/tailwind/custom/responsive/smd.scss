@@ -1,0 +1,45 @@
+@layer components {
+  @screen smd {
+    h1,
+    .h1 {
+      @apply pb-5;
+      font-size: 3rem;
+      line-height: 3.75rem;
+    }
+    h2,
+    h2 > p,
+    h2 p > a,
+    .h2,
+    .h2 > p,
+    .h2 p > a {
+      font-size: 2.5rem;
+      line-height: 3.125rem;
+    }
+    .h3_sm,
+    .h3_sm > p > a,
+    .h3 > p {
+      @apply font-semibold;
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+    .para_lg {
+      font-size: 1.375rem;
+      @apply leading-8;
+    }
+    .rxsection-y-space {
+      padding: 5.25rem 0rem;
+    }
+    .rxsection-b-space {
+      padding-bottom: 5.25rem;
+    }
+
+    .rxsection-t-space {
+      padding-top: 5.25rem;
+    }
+    .anniversry-data{
+      p{
+        @apply text-2xl leading-9;
+      }
+    }
+  }
+}

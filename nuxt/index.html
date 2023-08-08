@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="google-site-verification" content="OqmjA4tOYjfxkh1kSiivoD8nJJ6sQzqG0QOj11GIJyM" />
+    <meta name="p:domain_verify" content="dbd059800486316e686a4fc2232ed9f8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      var webWorker = new Worker('/worker.js');
+      webWorker.state ={};
+    </script>
+    
+  </head>
+  <body>
+    <div id="tez_app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

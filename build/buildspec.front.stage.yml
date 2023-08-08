@@ -1,0 +1,15 @@
+version: 0.2
+
+
+phases:   
+  #pre_build:
+    #commands:
+
+  build:
+    commands:
+       - aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-0bf15ceb283796e8b" --region ap-south-1  --parameters 'commands=["cd /home/ubuntu/'$Nuxt_Folder'","git stash push -m staticsw /home/ubuntu/'$Nuxt_Folder'/static/sw.js","git pull"]' 
+     
+  post_build:
+    commands:
+       - aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-0bf15ceb283796e8b" --region ap-south-1  --parameters 'commands=["cd /home/ubuntu/'$Nuxt_Folder'","npm run generate:stage","firebase login --no-localhost --token '$FIREBASE_STAGE_TOKEN'","firebase use --token '$FIREBASE_STAGE_TOKEN' default","firebase deploy --token '$FIREBASE_STAGE_TOKEN'"]' --service-role "arn:aws:iam::729660324417:role/service-role/codebuild-frontend-staging-deployment-service-role" --notification-config '{"NotificationArn":"arn:aws:sns:ap-south-1:729660324417:frontend-staging-notification","NotificationEvents":["Success"],"NotificationType":"Invocation"}' 
+    

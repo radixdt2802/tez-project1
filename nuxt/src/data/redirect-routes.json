@@ -1,0 +1,12 @@
+[
+  {
+    "from": "^/abc",
+    "to": "/my-about-us",
+    "statusCode": 301
+  },
+  {
+    "from": "^/da",
+    "to": "/about",
+    "statusCode": 404
+  }
+]
